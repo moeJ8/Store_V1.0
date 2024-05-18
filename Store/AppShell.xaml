@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Store.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Store"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Store">
+
+    <TabBar>
+        <Tab Title="Home" Icon="home.png" >
+
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"  />
+        </Tab>
+
+        <Tab Title="Customers">
+            <ShellContent ContentTemplate="{DataTemplate local:Customers}" Route="Customers"/>
+        </Tab>
+
+        <Tab Title="Orders">
+            <ShellContent ContentTemplate="{DataTemplate local:Orders}" Route="Orders"/>
+        </Tab>
+
+        <Tab Title="Products">
+            <ShellContent ContentTemplate="{DataTemplate local:Products}" Route="Products"/>
+        </Tab>
+
+        <Tab Title="Order Items">
+            <ShellContent ContentTemplate="{DataTemplate local:Order_Items}" Route="Order Items"/>
+        </Tab>
+        <Tab Title="Inventory">
+            <ShellContent ContentTemplate="{DataTemplate local:Inventory}" Route="Inventory"/>
+        </Tab>
+
+
+
+
+
+    </TabBar>
+
+</Shell>
